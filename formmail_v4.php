@@ -18,6 +18,7 @@ if (!isset($_POST["formid"])) {
 }
 
 const BASE64START = "data:image/png;base64,";
+date_default_timezone_set('Europe/Berlin');
 
 foreach ($_POST as $name => $value) {
     $str = stripslashes($value);
